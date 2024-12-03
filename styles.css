@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  /* max-width: 800px; */
+  /* overflow: hidden; */
+}
+
+/* обложка */
+
+.cover {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-image: url(fog.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+}
+
+#albatross {
+  width: 400px;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* таблица с меню */
+
+.container-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-image: url(fog.jpg); */
+  /* background-size: cover; */
+
+  /* background-image: linear-gradient(
+    to left,
+    #071224,
+    #1b127d,
+    #805ce2,
+    #f4be66
+  ); */
+
+  background-size: cover;
+  padding: 10px;
+
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.tab {
+  position: relative;
+  padding: 10px;
+
+  color: rgb(252, 239, 222);
+
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+
+  background-image: url(fog.jpg);
+  background-size: cover;
+  /* background-color: #183159d0; */
+  color: bisque;
+
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 35px;
+
+  z-index: 1;
+}
+
+.tab:hover .submenu {
+  display: block;
+}
+
+.menu:hover {
+  background-color: rgba(254, 0, 220, 0.533);
+  border-radius: 5px;
+  transition: all 0.5s, color 1s;
+}
+
+.menu a,
+p {
+  color: azure;
+  text-decoration: none;
+}
+
+.submenu:hover {
+  /*  доделать "поведение вкладок" */
+}
+
+/* центральная колонка */
+
+.main-container {
+  /* display: flex; */
+  background-image: url(neon.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.main-container h1 {
+  /* заголовок */
+  text-align: center;
+  font-size: 46px;
+  color: #fef8e7;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text-greetings p,
+a,
+menu,
+h3 {
+  color: #fef8e7;
+  margin: 10px;
+}
+
+.text-accent {
+  font-size: 26px;
+  color: #f267ff;
+}
+
+/* Основной текст */
+.main-section {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr); */
+
+  display: flex;
+  justify-content: space-between;
+  /* margin: 50px, auto; */
+  padding: 0 30px;
+  text-align: start;
+}
+
+/* Правая колонка */
+
+.text-right {
+  /* background-color: #11234056; */
+  border-radius: 8px;
+  width: 300px;
+
+  order: 1;
+}
+
+/* Левая колонка */
+
+.text-left {
+  /* background-color: #40111144; */
+  border-radius: 8px;
+  width: 300px;
+  /* padding: 10px; */
+  text-align: start;
+
+  order: 3;
+}
+
+.text-greetings {
+  /* background-color: #b584cd92; */
+  border-radius: 8px;
+
+  text-align: end;
+
+  width: 750px;
+
+  order: 2;
+}
+
+/* подвал */
+
+.site-contact {
+  position: relative;
+  margin-bottom: 0;
+  /* background-color: #112340; */
+  background: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  filter: brightness(60%);
+}
+
+.footer a,
+p,
+h3,
+h4,
+ul {
+  color: snow;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  line-height: 1.5;
+}
+
+.footer ul {
+  font-size: 12px;
+}
+
+#tel:hover {
+  color: rgb(254, 0, 220);
+}
+
+#e-l:hover {
+  color: rgb(254, 0, 220);
+}
+
+.copy {
+  /* line-height: 1.5; */
+  padding: 0;
+}
+
+/* КНОПКА "Ракета" */
+
+#rocket img {
+  width: 100px;
+  height: 100px;
+
+  position: fixed;
+  bottom: 50px;
+  right: 95px;
+}
+
+/* кнопки */
+
+/* .button {
+  background-color: pink;
+  transition: background-color 0.6s, transform 0.5s;
+  border-radius: 15px;
+}
+
+.button:hover {
+  background-color: white;
+  transform: scale(110%);
+}
+
+.buttone {
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.buttone:hover {
+  background-color: white;
+}
+
+.buttone {
+  background-color: blue;
+  transition: background-color 0.6s;
+}
+
+.buttone:hover {
+  background-color: white;
+} */
+
+/* кнопки */
